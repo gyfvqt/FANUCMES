@@ -1,0 +1,441 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>重庆西门雷森有限公司</title>
+    <meta name="description" content="这是一个 table 页面">
+    <meta name="keywords" content="table">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="stylesheet" href="assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <!--[if lt IE 9]>
+    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+    <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+    <![endif]-->
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--<![endif]-->
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script type="text/javascript">
+        function Aopen() {
+            //debugger
+            $('#do-not-say-1').collapse('open');
+            $('#do-not-say-2').collapse('close');
+        }
+    </script>
+</head>
+<body>
+    <!--[if lte IE 9]>
+    <p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+      以获得更好的体验！</p>
+    <![endif]-->
+    <header class="am-topbar am-topbar-inverse admin-header">
+        <div class="am-topbar-brand">
+            <strong>FANUC-MES系统</strong> <small></small>
+        </div>
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+        <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+            <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
+                <!--<li><a href="javascript:;"><span class="am-icon-envelope-o"></span> 收件箱 <span class="am-badge am-badge-warning">5</span></a></li>-->
+                <li class="am-dropdown" data-am-dropdown>
+                    <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                        <span class="am-icon-users"></span> 路人甲 <span class="am-icon-caret-down"></span>
+                    </a>
+                    <ul class="am-dropdown-content">
+                        <li><a href="#"><span class="am-icon-user"></span> 资料</a></li>
+                        <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
+                        <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
+                    </ul>
+                </li>
+                <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="am-cf admin-main" style="background-image:url('1.png')">
+        <!-- sidebar start -->
+        <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
+            <div class="am-offcanvas-bar admin-offcanvas-bar">
+                <ul class="am-list admin-sidebar-list">
+                    <li><a href="admin-index.html"><span class="am-icon-home"></span> 首页</a></li>
+                    <li class="admin-parent">
+                        <a class="am-cf" data-am-collapse="{target: '#collapse-nav'}"><span class="am-icon-file"></span>生产数据管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                        <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav">
+                            <li><a href="admin-user.html" class="am-cf"><span class="am-icon-check"></span> 生产线管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span></a></li>
+                            <li><a href="admin-help.html"><span class="am-icon-th"></span> 产品管理</a></li>
+                            <li><a href="admin-gallery.html"><span class="am-icon-th"></span> PC站点管理</a></li>
+                            <li><a href="admin-gallery.html"><span class="am-icon-th"></span> PLC站点管理</a></li>
+                            <li><a href="admin-gallery.html"><span class="am-icon-th"></span> PLC模板</a></li>
+                            <li><a href="admin-gallery.html"><span class="am-icon-th"></span> BOM管理</a></li>
+                            <li><a href="admin-gallery.html"><span class="am-icon-calendar"></span> 工作日历</a></li>
+                            <li><a href="admin-gallery.html"><span class="am-icon-th"></span> 设备主数据</a></li>
+                            <li><a href="admin-log.html"><span class="am-icon-th"></span> 设备故障提醒设置</a></li>
+                            <li><!--<a href="admin-404.html"><span class="am-icon-bug"></span> 404</a>--></li>
+                        </ul>
+                    </li>
+                    <li><a href="admin-table.html"><span class="am-icon-table"></span> 生产排产</a></li>
+                    <li><a href="admin-table.html"><span class="am-icon-table"></span> 订单管理</a></li>
+                    <li><a href="admin-table.html"><span class="am-icon-table"></span> 物料拉动</a></li>
+                    <li><a href="admin-table.html"><span class="am-icon-table"></span> 刀具管理</a></li>
+                    <li><a href="admin-table.html"><span class="am-icon-table"></span> 设备维护</a></li>
+                    <li><a href="admin-table.html"><span class="am-icon-table"></span> 库存WMS</a></li>
+                    <!--<li>
+                        <a href="admin-form.html">
+                            <span class="am-icon-pencil-square-o"></span>
+                        </a>
+                    </li>-->
+                    <li><a href="#"><span class="am-icon-sign-out"></span> 注销</a></li>
+                </ul>
+                <div class="am-panel am-panel-default admin-sidebar-panel">
+                    <div class="am-panel-bd">
+                        <p><span class="am-icon-bookmark"></span> 公告</p>
+                        <p>时光静好，与君语；细水流年，与君同。</p>
+                    </div>
+                </div>
+                <!--<div class="am-panel am-panel-default admin-sidebar-panel">
+                  <div class="am-panel-bd">
+                    <p><span class="am-icon-tag"></span> wiki</p>
+                    <p>Welcome to the Amaze UI wiki!</p>
+                  </div>
+                </div>-->
+            </div>
+        </div>
+        <!-- sidebar end -->
+        <!-- content start -->
+        <div class="admin-content">
+            <div class="admin-content-body">
+                <div class="am-cf am-padding am-padding-bottom-0">
+                    <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">用户</strong> / <small>Users</small></div>
+                </div>
+                <hr>
+                <div class="am-g">
+                    <div class="am-u-sm-12 am-u-md-6">
+                        <div class="am-btn-toolbar">
+                            <div class="am-btn-group am-btn-group-xs">
+                                <a href="#" onclick="javascript:Aopen();">测试</a>
+                                <button type="button" class="am-btn am-btn-default" ><span class="am-icon-plus" onclick="javascript:Aopen();"></span> 新增</button>
+                                <button type="button" class="am-btn am-btn-default"><span class="am-icon-save"></span> 保存</button>
+                                <button type="button" class="am-btn am-btn-default"><span class="am-icon-archive"></span> 审核</button>
+                                <button type="button" class="am-btn am-btn-default"><span class="am-icon-trash-o"></span> 删除</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="am-u-sm-12 am-u-md-3">
+                        <div class="am-form-group">
+                            <select data-am-selected="{btnSize: 'sm'}">
+                                <option value="option1">所有类别</option>
+                                <option value="option2">IT业界</option>
+                                <option value="option3">数码产品</option>
+                                <option value="option3">笔记本电脑</option>
+                                <option value="option3">平板电脑</option>
+                                <option value="option3">只能手机</option>
+                                <option value="option3">超极本</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--<div class="am-u-sm-12 am-u-md-3">
+                        <div class="am-input-group am-input-group-sm">
+                            <input type="text" class="am-form-field">
+                            <span class="am-input-group-btn">
+                                <button class="am-btn am-btn-default" type="button">搜索</button>
+                            </span>
+                        </div>
+                    </div>-->
+                </div>
+                <div class="am-panel-group" id="accordion">
+                    <div class="am-panel am-panel-default">
+                        <div class="am-panel-hd">
+                            <h4 class="am-panel-title" data-am-collapse="{parent: '#accordion', target: '#do-not-say-1'}">
+                                用户信息
+                            </h4>
+                        </div>
+                        <div id="do-not-say-1" class="am-panel-collapse am-collapse am-in">
+                            <div class="am-panel-bd">
+                                <form class="am-form">
+                                    <table class="am-table am-table-striped am-table-hover table-main">
+                                        <thead>
+                                            <tr>
+                                                <th class="table-check"><input type="checkbox" /></th>
+                                                <th class="table-id">ID</th>
+                                                <th class="table-title">标题</th>
+                                                <th class="table-type">类别</th>
+                                                <th class="table-author am-hide-sm-only">作者</th>
+                                                <th class="table-date am-hide-sm-only">修改日期</th>
+                                                <th class="table-set">操作</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="checkbox" /></td>
+                                                <td>1</td>
+                                                <td><a href="#">路人User</a></td>
+                                                <td>default</td>
+                                                <td class="am-hide-sm-only">测试1号</td>
+                                                <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
+                                                <td>
+                                                    <div class="am-btn-toolbar">
+                                                        <div class="am-btn-group am-btn-group-xs">
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" /></td>
+                                                <td>2</td>
+                                                <td><a href="#">路人User</a></td>
+                                                <td>default</td>
+                                                <td class="am-hide-sm-only">测试1号</td>
+                                                <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
+                                                <td>
+                                                    <div class="am-btn-toolbar">
+                                                        <div class="am-btn-group am-btn-group-xs">
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" /></td>
+                                                <td>3</td>
+                                                <td><a href="#">路人User</a></td>
+                                                <td>default</td>
+                                                <td class="am-hide-sm-only">测试1号</td>
+                                                <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
+                                                <td>
+                                                    <div class="am-btn-toolbar">
+                                                        <div class="am-btn-group am-btn-group-xs">
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" /></td>
+                                                <td>4</td>
+                                                <td><a href="#">路人User</a></td>
+                                                <td>default</td>
+                                                <td class="am-hide-sm-only">测试1号</td>
+                                                <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
+                                                <td>
+                                                    <div class="am-btn-toolbar">
+                                                        <div class="am-btn-group am-btn-group-xs">
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" /></td>
+                                                <td>5</td>
+                                                <td><a href="#">路人User</a></td>
+                                                <td>default</td>
+                                                <td class="am-hide-sm-only">测试1号</td>
+                                                <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
+                                                <td>
+                                                    <div class="am-btn-toolbar">
+                                                        <div class="am-btn-group am-btn-group-xs">
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" /></td>
+                                                <td>6</td>
+                                                <td><a href="#">路人User</a></td>
+                                                <td>default</td>
+                                                <td class="am-hide-sm-only">测试1号</td>
+                                                <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
+                                                <td>
+                                                    <div class="am-btn-toolbar">
+                                                        <div class="am-btn-group am-btn-group-xs">
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" /></td>
+                                                <td>7</td>
+                                                <td><a href="#">路人User</a></td>
+                                                <td>default</td>
+                                                <td class="am-hide-sm-only">测试1号</td>
+                                                <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
+                                                <td>
+                                                    <div class="am-btn-toolbar">
+                                                        <div class="am-btn-group am-btn-group-xs">
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" /></td>
+                                                <td>8</td>
+                                                <td><a href="#">路人User</a></td>
+                                                <td>default</td>
+                                                <td class="am-hide-sm-only">测试1号</td>
+                                                <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
+                                                <td>
+                                                    <div class="am-btn-toolbar">
+                                                        <div class="am-btn-group am-btn-group-xs">
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" /></td>
+                                                <td>9</td>
+                                                <td><a href="#">路人User</a></td>
+                                                <td>default</td>
+                                                <td class="am-hide-sm-only">测试1号</td>
+                                                <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
+                                                <td>
+                                                    <div class="am-btn-toolbar">
+                                                        <div class="am-btn-group am-btn-group-xs">
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" /></td>
+                                                <td>10</td>
+                                                <td><a href="#">路人User</a></td>
+                                                <td>default</td>
+                                                <td class="am-hide-sm-only">测试1号</td>
+                                                <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
+                                                <td>
+                                                    <div class="am-btn-toolbar">
+                                                        <div class="am-btn-group am-btn-group-xs">
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+                                                            <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                    <div class="am-cf">
+                                        共 15 条记录
+                                        <div class="am-fr">
+                                            <ul class="am-pagination">
+                                                <li class="am-disabled"><a href="#">«</a></li>
+                                                <li class="am-active"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">»</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                   
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="am-panel am-panel-default">
+                        <div class="am-panel-hd">
+                            <h4 class="am-panel-title" data-am-collapse="{parent: '#accordion', target: '#do-not-say-2'}">
+                                用户详情
+                            </h4>
+                        </div>
+                        <div id="do-not-say-2" class="am-panel-collapse am-collapse">
+                            <div class="am-panel-bd">
+                                <form class="am-form am-form-horizontal">
+                                    <div class="am-form-group">
+                                        <label for="user-name" class="am-u-sm-3 am-form-label">姓名 / Name</label>
+                                        <div class="am-u-sm-9">
+                                            <input type="text" id="user-name" placeholder="姓名 / Name">
+                                            <small>输入你的名字，让我们记住你。</small>
+                                        </div>
+                                    </div>
+                                    <div class="am-form-group">
+                                        <label for="user-email" class="am-u-sm-3 am-form-label">电子邮件 / Email</label>
+                                        <div class="am-u-sm-9">
+                                            <input type="email" id="user-email" placeholder="输入你的电子邮件 / Email">
+                                            <small>邮箱你懂得...</small>
+                                        </div>
+                                    </div>
+                                    <div class="am-form-group">
+                                        <label for="user-phone" class="am-u-sm-3 am-form-label">电话 / Telephone</label>
+                                        <div class="am-u-sm-9">
+                                            <input type="tel" id="user-phone" placeholder="输入你的电话号码 / Telephone">
+                                        </div>
+                                    </div>
+                                    <div class="am-form-group">
+                                        <label for="user-QQ" class="am-u-sm-3 am-form-label">QQ</label>
+                                        <div class="am-u-sm-9">
+                                            <input type="number" pattern="[0-9]*" id="user-QQ" placeholder="输入你的QQ号码">
+                                        </div>
+                                    </div>
+                                    <div class="am-form-group">
+                                        <label for="user-weibo" class="am-u-sm-3 am-form-label">微博 / Twitter</label>
+                                        <div class="am-u-sm-9">
+                                            <input type="text" id="user-weibo" placeholder="输入你的微博 / Twitter">
+                                        </div>
+                                    </div>
+                                    <div class="am-form-group">
+                                        <label for="user-intro" class="am-u-sm-3 am-form-label">简介 / Intro</label>
+                                        <div class="am-u-sm-9">
+                                            <textarea class="" rows="5" id="user-intro" placeholder="输入个人简介"></textarea>
+                                            <small>250字以内写出你的一生...</small>
+                                        </div>
+                                    </div>
+                                    <div class="am-form-group">
+                                        <div class="am-u-sm-9 am-u-sm-push-3">
+                                            <button type="button" class="am-btn am-btn-primary">保存修改</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="admin-content-footer">
+                <hr>
+                <p class="am-padding-left">© 2019 重庆西门雷森有限公司.</p>
+            </footer>
+        </div>
+        <!-- content end -->
+    </div>
+    <a href="#" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}"></a>
+    <footer>
+        <hr>
+        <p class="am-padding-left">© 2019 重庆西门雷森有限公司.</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,7 @@
+F:\项目\SchoolMes\PLCNode\PLCNode\bin\Debug\PLCNode.exe.config
+F:\项目\SchoolMes\PLCNode\PLCNode\bin\Debug\PLCNode.exe
+F:\项目\SchoolMes\PLCNode\PLCNode\bin\Debug\PLCNode.pdb
+F:\项目\SchoolMes\PLCNode\PLCNode\obj\Debug\PLCNode.csprojAssemblyReference.cache
+F:\项目\SchoolMes\PLCNode\PLCNode\obj\Debug\PLCNode.csproj.CoreCompileInputs.cache
+F:\项目\SchoolMes\PLCNode\PLCNode\obj\Debug\PLCNode.exe
+F:\项目\SchoolMes\PLCNode\PLCNode\obj\Debug\PLCNode.pdb

@@ -1,0 +1,13 @@
+F:\项目\SchoolMes\MES.SignalRConsoleClient\MES.SignalRConsoleClient\bin\Debug\MES.SignalRConsoleClient.exe.config
+F:\项目\SchoolMes\MES.SignalRConsoleClient\MES.SignalRConsoleClient\bin\Debug\MES.SignalRConsoleClient.exe
+F:\项目\SchoolMes\MES.SignalRConsoleClient\MES.SignalRConsoleClient\bin\Debug\MES.SignalRConsoleClient.pdb
+F:\项目\SchoolMes\MES.SignalRConsoleClient\MES.SignalRConsoleClient\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+F:\项目\SchoolMes\MES.SignalRConsoleClient\MES.SignalRConsoleClient\bin\Debug\Newtonsoft.Json.dll
+F:\项目\SchoolMes\MES.SignalRConsoleClient\MES.SignalRConsoleClient\bin\Debug\Microsoft.AspNet.SignalR.Client.pdb
+F:\项目\SchoolMes\MES.SignalRConsoleClient\MES.SignalRConsoleClient\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+F:\项目\SchoolMes\MES.SignalRConsoleClient\MES.SignalRConsoleClient\bin\Debug\Newtonsoft.Json.xml
+F:\项目\SchoolMes\MES.SignalRConsoleClient\MES.SignalRConsoleClient\obj\Debug\MES.SignalRConsoleClient.csproj.CoreCompileInputs.cache
+F:\项目\SchoolMes\MES.SignalRConsoleClient\MES.SignalRConsoleClient\obj\Debug\MES.SignalRConsoleClient.csproj.CopyComplete
+F:\项目\SchoolMes\MES.SignalRConsoleClient\MES.SignalRConsoleClient\obj\Debug\MES.SignalRConsoleClient.exe
+F:\项目\SchoolMes\MES.SignalRConsoleClient\MES.SignalRConsoleClient\obj\Debug\MES.SignalRConsoleClient.pdb
+F:\项目\SchoolMes\MES.SignalRConsoleClient\MES.SignalRConsoleClient\obj\Debug\MES.SignalRConsoleClient.csprojAssemblyReference.cache

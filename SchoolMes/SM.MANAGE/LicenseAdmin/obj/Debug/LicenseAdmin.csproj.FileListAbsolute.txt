@@ -1,0 +1,13 @@
+F:\项目\SchoolMes\SM.MANAGE\LicenseAdmin\bin\Debug\LicenseAdmin.exe.config
+F:\项目\SchoolMes\SM.MANAGE\LicenseAdmin\bin\Debug\LicenseAdmin.exe
+F:\项目\SchoolMes\SM.MANAGE\LicenseAdmin\bin\Debug\LicenseAdmin.pdb
+F:\项目\SchoolMes\SM.MANAGE\LicenseAdmin\bin\Debug\Helper.dll
+F:\项目\SchoolMes\SM.MANAGE\LicenseAdmin\bin\Debug\Helper.pdb
+F:\项目\SchoolMes\SM.MANAGE\LicenseAdmin\obj\Debug\LicenseAdmin.csprojAssemblyReference.cache
+F:\项目\SchoolMes\SM.MANAGE\LicenseAdmin\obj\Debug\LicenseAdmin.Release.resources
+F:\项目\SchoolMes\SM.MANAGE\LicenseAdmin\obj\Debug\LicenseAdmin.Properties.Resources.resources
+F:\项目\SchoolMes\SM.MANAGE\LicenseAdmin\obj\Debug\LicenseAdmin.csproj.GenerateResource.cache
+F:\项目\SchoolMes\SM.MANAGE\LicenseAdmin\obj\Debug\LicenseAdmin.csproj.CoreCompileInputs.cache
+F:\项目\SchoolMes\SM.MANAGE\LicenseAdmin\obj\Debug\LicenseAdmin.csproj.CopyComplete
+F:\项目\SchoolMes\SM.MANAGE\LicenseAdmin\obj\Debug\LicenseAdmin.exe
+F:\项目\SchoolMes\SM.MANAGE\LicenseAdmin\obj\Debug\LicenseAdmin.pdb

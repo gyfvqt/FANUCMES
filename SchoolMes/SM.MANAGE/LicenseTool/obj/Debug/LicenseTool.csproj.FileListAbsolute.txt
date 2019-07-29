@@ -1,0 +1,13 @@
+F:\项目\SchoolMes\SM.MANAGE\LicenseTool\bin\Debug\LicenseTool.exe.config
+F:\项目\SchoolMes\SM.MANAGE\LicenseTool\bin\Debug\LicenseTool.exe
+F:\项目\SchoolMes\SM.MANAGE\LicenseTool\bin\Debug\LicenseTool.pdb
+F:\项目\SchoolMes\SM.MANAGE\LicenseTool\bin\Debug\Helper.dll
+F:\项目\SchoolMes\SM.MANAGE\LicenseTool\bin\Debug\Helper.pdb
+F:\项目\SchoolMes\SM.MANAGE\LicenseTool\obj\Debug\LicenseTool.csprojAssemblyReference.cache
+F:\项目\SchoolMes\SM.MANAGE\LicenseTool\obj\Debug\LicenseTool.Regist.resources
+F:\项目\SchoolMes\SM.MANAGE\LicenseTool\obj\Debug\LicenseTool.Properties.Resources.resources
+F:\项目\SchoolMes\SM.MANAGE\LicenseTool\obj\Debug\LicenseTool.csproj.GenerateResource.cache
+F:\项目\SchoolMes\SM.MANAGE\LicenseTool\obj\Debug\LicenseTool.csproj.CoreCompileInputs.cache
+F:\项目\SchoolMes\SM.MANAGE\LicenseTool\obj\Debug\LicenseTool.csproj.CopyComplete
+F:\项目\SchoolMes\SM.MANAGE\LicenseTool\obj\Debug\LicenseTool.exe
+F:\项目\SchoolMes\SM.MANAGE\LicenseTool\obj\Debug\LicenseTool.pdb

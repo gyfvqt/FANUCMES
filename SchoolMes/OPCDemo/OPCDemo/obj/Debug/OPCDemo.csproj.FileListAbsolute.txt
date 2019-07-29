@@ -1,0 +1,11 @@
+F:\项目\SchoolMes\OPCDemo\OPCDemo\bin\Debug\OPCDemo.exe.config
+F:\项目\SchoolMes\OPCDemo\OPCDemo\bin\Debug\OPCDemo.exe
+F:\项目\SchoolMes\OPCDemo\OPCDemo\bin\Debug\OPCDemo.pdb
+F:\项目\SchoolMes\OPCDemo\OPCDemo\obj\Debug\OPCDemo.csprojAssemblyReference.cache
+F:\项目\SchoolMes\OPCDemo\OPCDemo\obj\Debug\OPCDemo.Form3.resources
+F:\项目\SchoolMes\OPCDemo\OPCDemo\obj\Debug\OPCDemo.Properties.Resources.resources
+F:\项目\SchoolMes\OPCDemo\OPCDemo\obj\Debug\OPCDemo.csproj.GenerateResource.cache
+F:\项目\SchoolMes\OPCDemo\OPCDemo\obj\Debug\OPCDemo.csproj.CoreCompileInputs.cache
+F:\项目\SchoolMes\OPCDemo\OPCDemo\obj\Debug\OPCDemo.exe
+F:\项目\SchoolMes\OPCDemo\OPCDemo\obj\Debug\OPCDemo.pdb
+F:\项目\SchoolMes\OPCDemo\OPCDemo\obj\Debug\OPCDemo.Form1.resources

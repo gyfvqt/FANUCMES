@@ -1,0 +1,265 @@
+@font-face {
+	font-family: developr;
+	src: url(/Content/font/developr.woff);
+}
+html {
+	min-height: 100%;
+}
+body {
+	text-align: center; color: rgb(255, 255, 255);
+}
+#container {
+	margin: 0px auto; padding: 25px 20px 0px; width: 280px; text-align: left;
+}
+#container input {
+	width: 212px;
+}
+#container input[type='radio'] {
+	width: auto !important;
+}
+#container input[type='checkbox'] {
+	width: auto !important;
+}
+#container input[type='text'] {
+	-webkit-appearance: none;
+}
+#container input[type='password'] {
+	-webkit-appearance: none;
+}
+#form-block {
+	position: relative;
+}
+.scratch-metal#form-block {
+	padding: 11px 10px; border-radius: 7px; box-shadow: inset 0px 1px 0px white, 0px 2px 7px rgba(0,0,0,0.75); -moz-box-shadow: inset 0 1px 0 white, 0 2px 7px rgba(0, 0, 0, .75); -webkit-box-shadow: inset 0 1px 0 white, 0 2px 7px rgba(0, 0, 0, .75); -webkit-border-radius: 7px; -moz-border-radius: 7px;
+}
+.no-boxshadow .scratch-metal#form-block {
+	border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) gray gray; border-image: none;
+}
+.scratch-metal#form-block input {
+	width: 172px;
+}
+.no-boxshadow .scratch-metal#form-block input {
+	width: 168px;
+}
+#form-viewport {
+	border-radius: 4px; position: relative; -webkit-border-radius: 4px; -moz-border-radius: 4px;
+}
+#form-switch {
+	margin: 20px 0px 0px; text-align: center;
+}
+.scratch-metal#form-block #form-switch {
+	margin: 10px -10px -11px; padding: 11px 10px 10px; border-top-color: gray; border-top-width: 1px; border-top-style: solid; box-shadow: inset 0px 1px 0px rgba(255,255,255,0.75); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .75); -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .75);
+}
+form {
+	margin-bottom: 11px;
+}
+form:last-child {
+	margin-bottom: 0px;
+}
+.no-boxshadow #form-viewport form {
+	border-width: 1px; border-style: solid;
+}
+#login-title {
+	text-align: center;
+}
+#login-title h1 {
+	margin: 0px; color: rgb(255, 255, 255); line-height: 55px; font-size: 48px; text-shadow: 0px 2px 7px rgba(0,0,0,0.5); -webkit-text-shadow: 0 2px 7px rgba(0, 0, 0, .5); -moz-text-shadow: 0 2px 7px rgba(0, 0, 0, .5);
+}
+#login-title h1.login-title-image {
+	background: url("/StyleFiles/img/logo.png") no-repeat center; height: 76px; text-align: left; text-indent: -3000px; overflow: hidden;
+}
+#login-title h5 {
+	color: rgb(200, 207, 213); margin-top: -6px;
+}
+#login {
+	width: 80px;
+}
+.form-door {
+	transition:250ms linear; left: 0px; height: 50%; right: 0px; border-right-color: rgb(153, 153, 153); border-left-color: rgb(153, 153, 153); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; display: block; position: absolute; z-index: 90; -ms-zoom: 1; -webkit-transition: all 250ms linear; -moz-transition: all 250ms linear; -o-transition: all 250ms linear;
+}
+#top-door {
+	background: url("/StyleFiles/img/textures/scratches.png") left bottom, -ms-linear-gradient(rgb(170, 170, 170), rgb(242, 242, 242) 59%, rgb(255, 255, 255)); border-radius: 4px 4px 0px 0px; top: -55%; box-shadow: inset 0px 4px 4px rgba(0,0,0,0.35), inset 0px -1px 0px rgba(0,0,0,0.35); -moz-box-shadow: inset 0 4px 4px rgba(0, 0, 0, .35), inset 0 -1px 0 rgba(0, 0, 0, .35); -webkit-box-shadow: inset 0 4px 4px rgba(0, 0, 0, .35), inset 0 -1px 0 rgba(0, 0, 0, .35); -webkit-border-radius: 4px 4px 0 0; -moz-border-radius: 4px 4px 0 0;
+}
+.door-down#top-door {
+	top: 0px;
+}
+.door-closed#top-door {
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.75), inset 0px -1px 0px rgba(0,0,0,0.35); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .75), inset 0 -1px 0 rgba(0, 0, 0, .35); -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .75), inset 0 -1px 0 rgba(0, 0, 0, .35);
+}
+#bot-door {
+	background: url("/StyleFiles/img/textures/scratches.png"), -ms-linear-gradient(rgb(255, 255, 255), rgb(197, 197, 197) 73%, rgb(222, 222, 222)); border-radius: 0px 0px 4px 4px; top: 105%; box-shadow: inset 0px 1px 0px rgba(255,255,255,0.75), inset 0px -4px 4px rgba(0,0,0,0.35); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .75), inset 0 -4px 4px rgba(0, 0, 0, .35); -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .75), inset 0 -4px 4px rgba(0, 0, 0, .35); -webkit-border-radius: 0 0 4px 4px; -moz-border-radius: 0 0 4px 4px;
+}
+.door-down#bot-door {
+	top: 50%;
+}
+.door-closed#bot-door {
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.75), inset 0px -1px 0px rgba(0,0,0,0.35); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .75), inset 0 -1px 0 rgba(0, 0, 0, .35); -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .75), inset 0 -1px 0 rgba(0, 0, 0, .35);
+}
+.form-door div {
+	background: url("/StyleFiles/img/favicons/watermark.png") no-repeat top; left: 50%; width: 128px; height: 64px; margin-left: -64px; position: absolute;
+}
+#top-door div {
+	bottom: 0px;
+}
+#bot-door div {
+	background-position: bottom; top: 0px;
+}
+.js-login #form-wrapper {
+	padding-bottom: 20px;
+}
+.js-login #form-viewport {
+	overflow: hidden; box-shadow: 0px 1px 0px rgba(255,255,255,0.75), 0px -1px 0px rgba(0,0,0,0.35); -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .75), 0 -1px 0 rgba(0, 0, 0, .35); -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .75), 0 -1px 0 rgba(0, 0, 0, .35);
+}
+.js-login form {
+	margin-bottom: 0px;
+}
+@media only screen and (min-width:768px)
+{
+html {
+	height: auto; overflow: auto; min-height: 100%;
+}
+html.js-login {
+	height: 100%; overflow: hidden;
+}
+body {
+	height: auto; overflow: auto;
+}
+.js-login body {
+	height: 100%; overflow: hidden;
+}
+.js-login #container {
+	padding: 0px; left: 50%; top: 50%; margin-left: -140px; position: absolute;
+}
+}
+.icon-eye::before {
+	font-family: developr; content: "©£";
+}
+.icon-eye-crossed::before {
+	font-family: developr; content: "©ð";
+}
+label {
+	cursor: default;
+}
+.bold {
+	font-weight: bold;
+}
+.table thead .icon2 {
+	width: 69px;
+}
+.multi-chkbox.table th {
+	margin: 0px; padding: 0px 5px; line-height: 25px;
+}
+.multi-chkbox.table td {
+	margin: 0px; padding: 0px 5px; line-height: 30px;
+}
+.table td {
+	vertical-align: middle;
+}
+.accordion > dt {
+	background: -ms-linear-gradient(rgb(69, 145, 218), rgb(56, 95, 186)); border-color: rgb(56, 95, 186); color: rgb(255, 255, 255); -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -o-background-size: 100% 100%;
+}
+.button {
+	cursor: pointer;
+}
+input:invalid {
+	border-radius: 4px;
+}
+textarea:invalid {
+	border-radius: 4px;
+}
+.radio-text {
+	font-weight: bold;
+}
+span.fluid.expandable-list.select select {
+	width: 100%;
+}
+label.label + span.k-combobox {
+	top: -2px; position: relative;
+}
+form .columns > div {
+	margin-bottom: 8px;
+}
+.button-height .switch {
+	margin-top: -3px;
+}
+div.block-label > span.RadInput {
+	top: -4px; position: relative;
+}
+div.inline-label > label.label + .RadComboBox {
+	top: -2px; position: relative;
+}
+div.inline-label > label.label + .RadInput {
+	top: -3px; position: relative;
+}
+.validationMessage {
+	margin-top: 10px; margin-bottom: 0px;
+}
+details.details > summary.small-padding {
+	padding: 5px 10px;
+}
+div.multi-checkbox-container .selection {
+	padding: 5px; font-size: 0.8em; font-style: italic;
+}
+div.multi-checkbox-container .footer {
+	line-height: normal; border-top-color: rgb(187, 187, 187); border-top-width: 1px; border-top-style: solid;
+}
+.rgDataDiv {
+	height: 100% !important;
+}
+.rgGroupHeader td div div {
+	top: 0px !important;
+}
+div.RadGrid_Silk .rgHeader {
+	border-left-color: rgb(238, 238, 238) !important; border-left-width: 1px !important; border-left-style: solid !important;
+}
+div.RadGrid_Silk th.rgResizeCol {
+	border-left-color: rgb(238, 238, 238) !important; border-left-width: 1px !important; border-left-style: solid !important;
+}
+div.RadGrid_Silk .rgFilterRow td {
+	border-left-color: rgb(238, 238, 238) !important; border-left-width: 1px !important; border-left-style: solid !important;
+}
+div.RadGrid_Silk .rgRow td {
+	border-left-color: rgb(238, 238, 238) !important; border-left-width: 1px !important; border-left-style: solid !important;
+}
+div.RadGrid_Silk .rgAltRow td {
+	border-left-color: rgb(238, 238, 238) !important; border-left-width: 1px !important; border-left-style: solid !important;
+}
+div.RadGrid_Silk .rgEditRow td {
+	border-left-color: rgb(238, 238, 238) !important; border-left-width: 1px !important; border-left-style: solid !important;
+}
+div.RadGrid_Silk .rgFooter td {
+	border-left-color: rgb(238, 238, 238) !important; border-left-width: 1px !important; border-left-style: solid !important;
+}
+.green-gradient {
+	color: rgb(255, 255, 255) !important;
+}
+.green-gradient:visited {
+	color: rgb(255, 255, 255) !important;
+}
+.green-gradient > .select-value {
+	color: rgb(255, 255, 255) !important;
+}
+.green-gradient > .select-arrow {
+	color: rgb(255, 255, 255) !important;
+}
+#logocontainer {
+	width: 100%; height: 38px; overflow: hidden; position: relative;
+}
+#logo {
+	left: 0px; top: 0px; width: 100%; position: relative;
+}
+#logo .item1 {
+	background: url("/Content/img/LogoCups-small.png") no-repeat center; margin: 0px; padding: 0px; width: 115px; float: left; display: inline;
+}
+#logo .item2 {
+	margin: 0px; padding: 0px; width: 124px; float: right; display: inline; background-repeat: no-repeat;
+}
+#logo .item3 {
+	margin: 0px; padding: 0px; top: 10px; color: rgb(255, 255, 255); font-size: 11px; font-style: italic; float: left; display: inline; position: relative;
+}
+.tooltip {
+	max-width: none;
+}
+.RadGrid {
+	z-index: 1000;
+}

@@ -1,0 +1,6 @@
+F:\项目\SchoolMes\SM.MANAGE\Helper\bin\Release\Helper.dll
+F:\项目\SchoolMes\SM.MANAGE\Helper\bin\Release\Helper.pdb
+F:\项目\SchoolMes\SM.MANAGE\Helper\obj\Release\Helper.csproj.CoreCompileInputs.cache
+F:\项目\SchoolMes\SM.MANAGE\Helper\obj\Release\Helper.dll
+F:\项目\SchoolMes\SM.MANAGE\Helper\obj\Release\Helper.pdb
+F:\项目\SchoolMes\SM.MANAGE\Helper\obj\Release\Helper.csprojAssemblyReference.cache

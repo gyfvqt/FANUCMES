@@ -1,0 +1,12 @@
+#mediaquery-checker {
+	height: 20px;
+}
+#shortcuts > li > a {
+	background-image: url("/StyleFiles/img/highres/shortcuts.png"); background-size: 136px 560px;
+}
+#shortcuts > li > span {
+	background-image: url("/StyleFiles/img/highres/shortcuts.png"); background-size: 136px 560px;
+}
+#shortcuts > li > a::before {
+	background-image: url("/StyleFiles/img/highres/shortcuts.png"); background-size: 136px 560px;
+}

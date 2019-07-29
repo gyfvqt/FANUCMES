@@ -1,0 +1,54 @@
+#mediaquery-checker {
+	width: 50px;
+}
+:last-child.columns {
+	margin-bottom: -25px;
+}
+.columns > div {
+	margin-bottom: 25px;
+}
+.column {
+	width: 6.08%;
+}
+.one-column {
+	width: 6.08%;
+}
+.two-columns {
+	width: 14.41%;
+}
+.three-columns {
+	width: 22.75%;
+}
+.four-columns {
+	width: 31.08%;
+}
+.five-columns {
+	width: 39.41%;
+}
+.six-columns {
+	width: 47.75%;
+}
+.seven-columns {
+	width: 56.08%;
+}
+.eight-columns {
+	width: 64.41%;
+}
+.nine-columns {
+	width: 72.72%;
+}
+.ten-columns {
+	width: 81.08%;
+}
+.eleven-columns {
+	width: 89.41%;
+}
+.twelve-columns {
+	width: 97.75%;
+}
+.new-row-tablet {
+	clear: none;
+}
+.new-row-desktop {
+	clear: left;
+}

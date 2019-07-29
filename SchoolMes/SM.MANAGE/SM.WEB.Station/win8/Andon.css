@@ -1,0 +1,217 @@
+﻿body {
+    font: normal 100% Arial, sans-serif;
+}
+
+.Top {
+    position: fixed;
+    width: 99%;
+    height: 40%;
+    border: 1px solid #fff;
+}
+
+.Middle {
+    position: fixed;
+    top: 41%;
+    width: 99%;
+    height: 30%;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.Foot {
+    position: fixed;
+    top: 71%;
+    width: 99%;
+    height: 28%;
+    border: 1px solid #fff;
+}
+
+.Line1 {
+    position: relative;
+    width: 100%;
+    height: 49%;
+    border-bottom: 1px solid #fff;
+}
+
+.Line2 {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    /*border:1px solid red;*/
+}
+
+.GridLeft {
+    position: relative;
+    vertical-align: middle;
+    float: left;
+    width: 25%;
+    height: 100%;
+    line-height: 100%;
+    text-align: center;
+}
+
+.GridRight {
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 100%;
+    line-height: 100%;
+    text-align: center;
+}
+
+.GridMiddle {
+    position: relative;
+    float: left;
+    width: 49%;
+    height: 100%;
+    line-height: 100%;
+    text-align: center;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.title-bar {
+    background: #31363a url(/win8/images/old-browsers/style/bg_profile.png) repeat-x;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background: -webkit-gradient(linear,left top,left bottom,from(#383e42),to(#31363a));
+    background: -webkit-linear-gradient(top,#383e42,#31363a);
+    background: -moz-linear-gradient(top,#383e42,#31363a);
+    background: -ms-linear-gradient(top,#383e42,#31363a);
+    background: -o-linear-gradient(top,#383e42,#31363a);
+    background: linear-gradient(top,#383e42,#31363a);
+}
+
+.linen {
+    color: #fff;
+    border-color: #929ba6;
+    background: #a7b2be url(/win8/images/old-browsers/black75.png);
+    background: url(/win8/images/old-browsers/black75.png),-webkit-gradient(linear,left top,left bottom,from(#5d656e),to(#a7b2be)) repeat-x,#a7b2be;
+    background: url(/win8/images/old-browsers/black75.png),-webkit-linear-gradient(top,#5d656e,#a7b2be) repeat-x,#a7b2be;
+    background: url(/win8/images/old-browsers/black75.png),-moz-linear-gradient(top,#5d656e,#a7b2be) repeat-x,#a7b2be;
+    background: url(/win8/images/old-browsers/black75.png),-ms-linear-gradient(top,#5d656e,#a7b2be) repeat-x,#a7b2be;
+    background: url(/win8/images/old-browsers/black75.png),-o-linear-gradient(top,#5d656e,#a7b2be) repeat-x,#a7b2be;
+    background: url(/win8/images/old-browsers/black75.png),linear-gradient(top,#5d656e,#a7b2be) repeat-x,#a7b2be;
+}
+
+.span1 {
+    position: absolute;
+    float: left;
+    top: 25%;
+    left: 0;
+    margin: -0.7em 0 0 0;
+    width: 100%;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.span2 {
+    position: absolute;
+    float: left;
+    top: 75%;
+    left: 0;
+    margin: -0.5em 0 0 0;
+    width: 100%;
+    font-size: 4em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.span3 {
+    position: absolute;
+    float: left;
+    top: 60%;
+    left: 0;
+    margin: -0.5em 0 0 0;
+    width: 100%;
+    font-size: 4em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.Alarm {
+    position: relative;
+    float: left;
+    background: red;
+    width: 16%;
+    height: 93%;
+    margin-left: 5px;
+    line-height: 100%;
+    text-align: center;
+}
+
+    .Alarm img {
+        position: absolute;
+        float: left;
+        bottom: 5px;
+        left: 5px;
+        width: 25%;
+        height: 30%;
+    }
+
+.AlarmStation {
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 33%;
+    width: 100%;
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.AlarmTime {
+    position: absolute;
+    float: left;
+    bottom: 5%;
+    left: 32%;
+    width: 55%;
+    height: 20%;
+    font-size: 150%;
+}
+
+.CurrentTimeTitle {
+    position: absolute;
+    float: left;
+    top: 10%;
+    left: 5%;
+    font-size: 100%;
+}
+
+.CurrentTimeDate {
+    position: absolute;
+    float: left;
+    top: 35%;
+    /*left: 35%;*/
+    width: 100%;
+    font-size: 150%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.CurrentTime {
+    position: absolute;
+    float: left;
+    top: 60%;
+    /*left: 35%;*/
+    width: 100%;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.equipmentalarm {
+    position: absolute;
+    width: 100%;
+    height: 49%;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.equipmentalarm span {
+    position: absolute;
+    float: left;
+    bottom: 45%;
+}

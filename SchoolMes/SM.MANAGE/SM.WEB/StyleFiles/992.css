@@ -1,0 +1,138 @@
+#mediaquery-checker {
+	width: 40px;
+}
+.hidden-on-tablet {
+	display: block;
+}
+.only-on-desktop {
+	display: block;
+}
+.hidden-on-desktop {
+	display: none;
+}
+.only-on-tablet {
+	display: none;
+}
+#title-bar {
+	height: 54px; line-height: 52px; padding-right: 10px !important; padding-left: 10px !important; border-top-color: rgb(102, 102, 102); border-top-width: 1px; border-top-style: solid;
+}
+#title-bar h2 {
+	left: 0px; height: 34px; right: 0px; line-height: 32px; font-size: 14px;
+}
+#title-bar ~ #main {
+	margin-top: 55px;
+}
+#title-bar ~ #menu {
+	top: 55px;
+}
+#title-bar ~ #shortcuts {
+	top: 55px;
+}
+body.with-menu #main {
+	transition:margin-right 200ms; margin-right: 260px; -webkit-transition: margin-right 200ms; -moz-transition: margin-right 200ms; -o-transition: margin-right 200ms;
+}
+body.reversed.with-menu #main {
+	transition:margin-left 200ms; margin-right: 0px; margin-left: 260px; -webkit-transition: margin-left 200ms; -moz-transition: margin-left 200ms; -o-transition: margin-left 200ms;
+}
+body.reversed.with-shortcuts.with-menu #main {
+	margin-right: 68px;
+}
+body.menu-hidden.with-menu #main {
+	margin-right: 0px;
+}
+body.reversed.menu-hidden.with-menu #main {
+	margin-left: 0px;
+}
+body.reversed.menu-hidden.with-shortcuts.with-menu #main {
+	margin-right: 68px;
+}
+#open-menu {
+	padding: 10px 8px 11px; top: 0px; right: 0px;
+}
+#title-bar + #open-menu {
+	top: 55px;
+}
+body.reversed #open-menu {
+	left: 0px; right: auto;
+}
+#open-menu > span {
+	background: url("/StyleFiles/img/standard/sprites.png") no-repeat 0px 0px; padding: 0px; border-radius: 0px; border: 0px currentColor; border-image: none; width: 20px; height: 17px; text-indent: 100px; overflow: hidden; display: block; white-space: nowrap; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; -webkit-border-radius: 0; -moz-border-radius: 0;
+}
+body.reversed #open-menu > span {
+	background-position: 0px -17px;
+}
+#open-menu:hover > span {
+	background-position: -20px 0px;
+}
+body.reversed #open-menu:hover > span {
+	background-position: -20px -17px;
+}
+body.menu-hidden #open-menu > span {
+	background-position: 0px -17px;
+}
+body.reversed.menu-hidden #open-menu > span {
+	background-position: 0px 0px;
+}
+body.menu-hidden #open-menu:hover > span {
+	background-position: -20px -17px;
+}
+body.reversed.menu-hidden #open-menu:hover > span {
+	background-position: -20px 0px;
+}
+#menu {
+	background: -ms-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("/StyleFiles/img/textures/grid.png") rgb(60, 64, 68); padding: 0px; border-radius: 0px; border: 0px currentColor; transition:margin-right 200ms; border-image: none; top: 0px; right: 0px; bottom: 0px; display: block; position: fixed; z-index: 1; max-height: none; box-shadow: inset 5px 5px 30px rgba(0,0,0,0.75); -moz-box-shadow: inset 5px 5px 30px rgba(0, 0, 0, 0.75); -webkit-box-shadow: inset 5px 5px 30px rgba(0, 0, 0, 0.75); -webkit-border-radius: 0; -moz-border-radius: 0; -webkit-transition: margin-right 200ms; -moz-transition: margin-right 200ms; -o-transition: margin-right 200ms; -webkit-background-size: auto; -moz-background-size: auto; -o-background-size: auto;
+}
+.no-boxshadow #menu {
+	width: 260px;
+}
+.no-generatedcontent #menu {
+	border-left-color: rgb(102, 102, 102); border-left-width: 1px; border-left-style: solid;
+}
+body.reversed #menu {
+	transition:margin-left 200ms; left: 0px; right: auto; box-shadow: inset -5px 5px 30px rgba(0,0,0,0.75); -moz-box-shadow: inset -5px 5px 30px rgba(0, 0, 0, 0.75); -webkit-box-shadow: inset -5px 5px 30px rgba(0, 0, 0, 0.75); -webkit-transition: margin-left 200ms; -moz-transition: margin-left 200ms; -o-transition: margin-left 200ms;
+}
+body.menu-hidden #menu {
+	margin-right: -260px;
+}
+body.reversed.menu-hidden #menu {
+	margin-right: 0px; margin-left: -260px;
+}
+#menu::before {
+	display: none;
+}
+#menu::after {
+	display: none;
+}
+#menu-before {
+	display: none;
+}
+#menu-after {
+	display: none;
+}
+#menu header {
+	padding-right: 36px;
+}
+body.reversed #menu header {
+	padding-right: 12px; padding-left: 36px;
+}
+#menu-content {
+	background: rgb(87, 93, 98); border-radius: 0px; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; -webkit-border-radius: 0; -moz-border-radius: 0;
+}
+.no-boxshadow #menu-content {
+	border: 0px currentColor; border-image: none;
+}
+#menu-content::before {
+	background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0)); left: 0px; top: 0px; width: 5px; right: auto; bottom: 0px; display: block; position: absolute; z-index: 99; content: " "; pointer-events: none; -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -o-background-size: 100% 100%;
+}
+body.reversed #menu-content::before {
+	background: -ms-linear-gradient(right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0)); left: auto; right: 0px; -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -o-background-size: 100% 100%;
+}
+#menu-content::after {
+	background: -ms-linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0)); top: 100%; height: 15px; bottom: auto; display: block; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -o-background-size: 100% 100%;
+}
+.pointerevents #menu-content::after {
+	background: -ms-linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0)); top: 100%; height: 15px; bottom: auto; display: block; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -o-background-size: 100% 100%;
+}
+#menu-footer {
+	padding: 10px 15px; margin-top: 5px;
+}

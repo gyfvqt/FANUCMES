@@ -1,0 +1,52 @@
+@page  {}
+* {
+	background: none !important; color: black !important; filter: none !important; text-shadow: none !important;
+}
+a {
+	color: rgb(68, 68, 68) !important; text-decoration: underline;
+}
+a:visited {
+	color: rgb(68, 68, 68) !important; text-decoration: underline;
+}
+a[href]::after {
+	content: " (" attr(href) ")";
+}
+abbr[title]::after {
+	content: " (" attr(title) ")";
+}
+a[href^='javascript:']::after {
+	content: "";
+}
+a[href^='#']::after {
+	content: "";
+}
+pre {
+	border: 1px solid rgb(153, 153, 153); border-image: none; page-break-inside: avoid;
+}
+blockquote {
+	border: 1px solid rgb(153, 153, 153); border-image: none; page-break-inside: avoid;
+}
+thead {
+	display: table-header-group;
+}
+tr {
+	page-break-inside: avoid;
+}
+img {
+	page-break-inside: avoid;
+}
+p {
+	orphans: 3; widows: 3;
+}
+h2 {
+	orphans: 3; widows: 3;
+}
+h3 {
+	orphans: 3; widows: 3;
+}
+h2 {
+	page-break-after: avoid;
+}
+h3 {
+	page-break-after: avoid;
+}

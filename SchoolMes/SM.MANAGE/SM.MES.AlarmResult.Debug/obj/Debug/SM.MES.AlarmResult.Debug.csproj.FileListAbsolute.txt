@@ -1,0 +1,17 @@
+F:\项目\SchoolMes\SM.MANAGE\SM.MES.AlarmResult.Debug\bin\Debug\SM.MES.AlarmResult.Debug.exe.config
+F:\项目\SchoolMes\SM.MANAGE\SM.MES.AlarmResult.Debug\bin\Debug\SM.MES.AlarmResult.Debug.exe
+F:\项目\SchoolMes\SM.MANAGE\SM.MES.AlarmResult.Debug\bin\Debug\SM.MES.AlarmResult.Debug.pdb
+F:\项目\SchoolMes\SM.MANAGE\SM.MES.AlarmResult.Debug\bin\Debug\Helper.dll
+F:\项目\SchoolMes\SM.MANAGE\SM.MES.AlarmResult.Debug\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+F:\项目\SchoolMes\SM.MANAGE\SM.MES.AlarmResult.Debug\bin\Debug\Newtonsoft.Json.dll
+F:\项目\SchoolMes\SM.MANAGE\SM.MES.AlarmResult.Debug\bin\Debug\Helper.pdb
+F:\项目\SchoolMes\SM.MANAGE\SM.MES.AlarmResult.Debug\bin\Debug\Microsoft.AspNet.SignalR.Client.pdb
+F:\项目\SchoolMes\SM.MANAGE\SM.MES.AlarmResult.Debug\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+F:\项目\SchoolMes\SM.MANAGE\SM.MES.AlarmResult.Debug\bin\Debug\Newtonsoft.Json.xml
+F:\项目\SchoolMes\SM.MANAGE\SM.MES.AlarmResult.Debug\obj\Debug\SM.MES.AlarmResult.Debug.csprojAssemblyReference.cache
+F:\项目\SchoolMes\SM.MANAGE\SM.MES.AlarmResult.Debug\obj\Debug\SM.MES.AlarmResult.Debug.Properties.Resources.resources
+F:\项目\SchoolMes\SM.MANAGE\SM.MES.AlarmResult.Debug\obj\Debug\SM.MES.AlarmResult.Debug.csproj.GenerateResource.cache
+F:\项目\SchoolMes\SM.MANAGE\SM.MES.AlarmResult.Debug\obj\Debug\SM.MES.AlarmResult.Debug.csproj.CoreCompileInputs.cache
+F:\项目\SchoolMes\SM.MANAGE\SM.MES.AlarmResult.Debug\obj\Debug\SM.MES.AlarmResult.Debug.csproj.CopyComplete
+F:\项目\SchoolMes\SM.MANAGE\SM.MES.AlarmResult.Debug\obj\Debug\SM.MES.AlarmResult.Debug.exe
+F:\项目\SchoolMes\SM.MANAGE\SM.MES.AlarmResult.Debug\obj\Debug\SM.MES.AlarmResult.Debug.pdb

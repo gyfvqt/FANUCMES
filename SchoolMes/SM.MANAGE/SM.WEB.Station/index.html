@@ -1,0 +1,409 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="win8/base.css" rel="stylesheet" />
+    <script src="win8/jquery.js"></script>
+    <script src="win8/jquery.easing.js"></script>
+    <script src="win8/base.js"></script>
+    <script type="text/javascript">
+        $(function () {   
+            FResize();
+            $(window).resize(function () {
+                FResize();
+            });
+        });
+        //$(document).ready(function () {
+        //    $("#B").click();
+        //});
+        function FResize() {
+            var h = (window.innerHeight - 120) < 500 ? 500 : (window.innerHeight - 120);
+            var w = window.innerWidth < 1260 ? 1260 : window.innerWidth;
+            //中间部分高度
+            $("#x").height(h);
+            $("#x").width(w);
+            var hafth = parseInt(h *0.48);
+            $("#process").height(hafth);
+            $("#process2").height(hafth);
+            $("#production").height(hafth);
+            $("#processsheet").height(hafth);
+            $("#traceability").height(hafth);
+            var w3 = parseInt(w * 0.30);
+            var w2 = parseInt(w * 0.46);
+
+            $(".title-bar").width(w);
+            $("#process").css({ "width": w3, "margin-left": "25px" });
+            $("#process2").css({ "width": w3, "margin-left": w3 + 50 });
+            $("#production").css({ "width": w3, "margin-left": w3 * 2 + 75 });
+            $("#processsheet").css({ "width": w2, "margin-left": "25px", "margin-top": hafth + 30 + 25});
+            $("#traceability").css({ "width": w2, "margin-left": w2 + 50, "margin-top": hafth + 30 + 25 });
+            
+        }
+        function fullScreen() {
+            var el = document.documentElement,
+                rfs = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen || el.msRequestFullScreen,
+                wscript;
+
+            if (typeof rfs != "undefined" && rfs) {
+                rfs.call(el);
+                return;
+            }
+
+            if (typeof window.ActiveXObject != "undefined") {
+                wscript = new ActiveXObject("WScript.Shell");
+                if (wscript) {
+                    wscript.SendKeys("{F11}");
+                }
+            }
+        }
+        function kaishi() {
+            var docElm = document.documentElement;
+            //W3C 
+            if (docElm.requestFullscreen) {
+                docElm.requestFullscreen();
+            }
+            //FireFox 
+            else if (docElm.mozRequestFullScreen) {
+                docElm.mozRequestFullScreen();
+            }
+            //Chrome等 
+            else if (docElm.webkitRequestFullScreen) {
+                docElm.webkitRequestFullScreen();
+            }
+            //IE11 
+            else if (docElm.msRequestFullscreen) {
+                docElm.msRequestFullscreen();
+            }
+            FResize();
+        }
+
+    </script>
+
+    <style type="text/css">
+        .round {            
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+        hr.style-one { /*内嵌水平线*/
+            margin: 0 auto;
+            border: 0;
+            height: 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        hr.style-two { /*透明渐变水平线*/
+            margin: 0 auto;
+            border: 0;
+            height: 3px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
+
+        hr.style-three { /*渐变*/
+            margin: 0 auto;
+            border: 0;
+            height: 3px;
+            background: #333;
+            background-image: linear-gradient(to right, #ccc, #333, #ccc);
+        }
+    </style>
+</head>
+<body id="B" onclick="kaishi()" style="overflow:hidden;">
+    <div class="title-bar" style="width:99.5%;height:60px;margin:0 auto;min-width:1260px;position:fixed;top:0px;">
+        <div style="height:58px;margin:1px;float:left;margin-left:15px;">
+            <span style="color:white;font:bold;position:absolute; margin-top:5px;">10/20</span><br />
+            <span style="color:white;font:bold">Fri</span>
+        </div>
+        <div style="height:58px;margin:1px;float:left;margin-left:15px;">
+            <span style="position:absolute; margin-top:15px; margin-left:15px;color:white;font-size:24px;font-weight:bolder; ">17:12</span>
+        </div>
+        <div style="height:58px;margin:1px;float:left;margin-left:105px;border-left:2px #ffffff solid;">
+            <span style="position:absolute; margin-top:5px; margin-left:5px;color:white;font-size:8px;font-weight:bolder; ">线体名称</span>
+            <span style="position:absolute; margin-top:20px; margin-left:15px;color:white;font-size:18px;font-weight:bolder; ">内饰线体</span>
+        </div>
+        <div style="height:58px;margin:1px;float:left;margin-left:185px;border-left:2px #ffffff solid;">
+            <span style="position:absolute; margin-top:5px; margin-left:5px;color:white;font-size:8px;font-weight:bolder; ">站点名称</span>
+            <span style="position:absolute; margin-top:20px; margin-left:15px;color:white;font-size:18px;font-weight:bolder; ">TL1OP01</span>
+        </div>
+        <div style="height:58px;margin:1px;float:left;margin-left:195px;border-left:2px #ffffff solid;">
+            <span style="position:absolute; margin-top:5px; margin-left:5px;color:white;font-size:8px;font-weight:bolder; ">SN</span>
+            <span style="position:absolute; margin-top:20px; margin-left:15px;color:white;font-size:18px;font-weight:bolder; ">LGV5D2FH0000001</span>
+        </div>
+        <div style="height:58px;margin:1px;float:left;margin-left:195px;border-left:2px #ffffff solid;">
+            <span style="position:absolute; margin-top:5px; margin-left:5px;color:white;font-size:8px;font-weight:bolder; ">产品编号</span>
+            <span style="position:absolute; margin-top:20px; margin-left:15px;color:white;font-size:18px;font-weight:bolder; ">FANUC001</span>
+        </div>
+        <div style="height:58px;margin:1px;float:left;margin-left:185px;border-left:2px #ffffff solid;">
+            <span style="position:absolute; margin-top:5px; margin-left:5px;color:white;font-size:8px;font-weight:bolder; ">已生产/订单数量</span>
+            <span style="position:absolute; margin-top:20px; margin-left:15px;color:white;font-size:18px;font-weight:bolder; ">10/25</span>
+        </div>
+        <div style="height:58px;margin:1px;float:left;margin-left:195px;border-left:2px #ffffff solid;">
+            <span style="position:absolute; margin-top:5px; margin-left:5px;color:white;font-size:8px;font-weight:bolder; ">下一个订单</span>
+            <span style="position:absolute; margin-top:20px; margin-left:15px;color:white;font-size:18px;font-weight:bolder; ">LGV5D2FH0000001</span>
+        </div>        
+    </div>
+    <div id="x" style="margin-top:62px;margin-bottom:62px; min-width:1260px;min-height:500px;background-color:rgb(255,255,255);z-index:-999;">
+        <div id="process" style="height:48%;width:30%;float: left;position:fixed;margin-top:15px; min-width:390px;margin-left:1%;">
+            <div>
+                <span style="font-size:18px;">过程质量</span><em style="font:18px;float:right;color:red;">已开缺陷5个</em>
+            </div>
+            <hr class="style-three" />
+            <div class="s-mod" style="width:98%;">
+                <ul>
+                    <li class="s-mod-item" w="24%" h="60" l="0" t="0" bg="#e8443a" cbg="#d92e24">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <li class="s-mod-item" w="24%" h="60" l="25%" t="0" bg="#aa5096" cbg="#922a7b">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <li class="s-mod-item" w="24%" h="60" l="50%" t="0" bg="#1CA1E2" cbg="#1182BA">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <!--<li class="s-mod-item" w="22%" h="60" l="69%" t="0" bg="#FFD302" cbg="#EAC203">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>-->
+                    <li class="s-mod-item" w="24%" h="60" l="0" t="72" bg="#8DC027" cbg="#76A31B">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <li class="s-mod-item" w="24%" h="60" l="25%" t="72" bg="#FF0198" cbg="#D80683">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <li class="s-mod-item" w="24%" h="60" l="50%" t="72" bg="#2b7ab7" cbg="#1e669d">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <li class="s-mod-item" w="24%" h="60" l="0" t="144" bg="#9B4C13" cbg="#8F4108">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <li class="s-mod-item" w="24%" h="60" l="25%" t="144" bg="#33ac5b" cbg="#209747">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <li class="s-mod-item" w="24%" h="60" l="50%" t="144" bg="#bf7030" cbg="#ae6021">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="process2" style="height:48%;width:30%;float: left;position:fixed;margin-top:15px; min-width:390px;margin-left:32%;">
+            <div>
+                <span style="font-size:18px;">过程质量</span>
+            </div>
+            <hr class="style-three" />
+            <div class="s-mod" style="width:98%;">
+                <ul>
+                    <li class="s-mod-item" w="24%" h="60" l="0" t="0" bg="#e8443a" cbg="#d92e24">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <li class="s-mod-item" w="24%" h="60" l="25%" t="0" bg="#aa5096" cbg="#922a7b">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <li class="s-mod-item" w="24%" h="60" l="50%" t="0" bg="#1CA1E2" cbg="#1182BA">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>                    
+                    <li class="s-mod-item" w="24%" h="60" l="0" t="72" bg="#9B4C13" cbg="#8F4108">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <li class="s-mod-item" w="24%" h="60" l="25%" t="72" bg="#9B4C13" cbg="#8F4108">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <li class="s-mod-item" w="24%" h="60" l="50%" t="72" bg="#9B4C13" cbg="#8F4108">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <li class="s-mod-item" w="24%" h="60" l="0" t="144" bg="#9B4C13" cbg="#8F4108">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <li class="s-mod-item" w="24%" h="60" l="25%" t="144" bg="#9B4C13" cbg="#8F4108">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <li class="s-mod-item" w="24%" h="60" l="50%" t="144" bg="#9B4C13" cbg="#8F4108">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="production" style="height:48%;width:34%;float: left;position:fixed;margin-top:15px; min-width:390px;margin-left:63%;">
+            <div>
+                <span style="font-size:18px;">产品信息</span>
+            </div>
+            <hr class="style-three" />
+            <div style="width:98%;margin:0 auto;text-align:left;font:36px bold #ccc;">LGV5D2FH0000001</div>
+            <div style="width:98%;margin:0 auto;">
+                <img src="bg.png" width="390" height="180" />
+            </div>
+        </div>
+        <div id="processsheet" style="width:38%;float: left;position:fixed; margin-top:280px;min-width:560px;margin-left:25px;">
+            <div>
+                <span style="font-size:18px;">工艺过程</span><em style="font:18px;float:right;">显示作业指导书</em>
+            </div>
+            <hr class="style-three" />
+            <div class="s-mod" style="width:98%;">
+                <ul>
+                    <li class="s-mod-item" w="98%" h="30" l="0" t="0" bg="#ccc" cbg="#ccc" >
+                        <div class="s-mod-wrap round">
+                            <div class="s-mod-def" style="text-align:left;"><span>6|商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+
+                    <li class="s-mod-item" w="98%" h="30" l="0" t="36" bg="#ccc" cbg="#ccc">
+                        <div class="s-mod-wrap round">
+                            <div class="s-mod-def" style="text-align:left;"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <li class="s-mod-item" w="98%" h="30" l="0" t="72" bg="#ccc" cbg="#ccc">
+                        <div class="s-mod-wrap round">
+                            <div class="s-mod-def" style="text-align:left;"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <li class="s-mod-item" w="98%" h="30" l="0" t="108" bg="#ccc" cbg="#ccc">
+                        <div class="s-mod-wrap round">
+                            <div class="s-mod-def" style="text-align:left;"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <!--<li class="s-mod-item" w="98%" h="30" l="0" t="144" bg="#ccc" cbg="#ccc">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def" style="text-align:left;"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>-->
+                </ul>
+            </div>
+
+
+        </div>
+        <div id="traceability" style="width:44%;float:left;position:fixed; margin-top:280px;min-width:560px;margin-left:1%;">
+            <div>
+                <span style="font-size:18px;">零件追溯</span>
+            </div>
+            <hr class="style-three" />
+            <div class="s-mod" style="width:98%;">
+                <ul>
+                    <li class="s-mod-item" w="98%" h="30" l="0" t="0" bg="#ccc" cbg="#ccc">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def" style="text-align:left;"><span>6|商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+
+                    <li class="s-mod-item" w="98%" h="30" l="0" t="36" bg="#ccc" cbg="#ccc">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def" style="text-align:left;"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <li class="s-mod-item" w="98%" h="30" l="0" t="72" bg="#ccc" cbg="#ccc">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def" style="text-align:left;"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <li class="s-mod-item" w="98%" h="30" l="0" t="108" bg="#ccc" cbg="#ccc">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def" style="text-align:left;"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>
+                    <!--<li class="s-mod-item" w="98%" h="30" l="0" t="144" bg="#ccc" cbg="#ccc">
+                        <div class="s-mod-wrap">
+                            <div class="s-mod-def" style="text-align:left;"><span>6.商品订单下载管理模块</span></div>
+                            <div class="s-mod-cur"><span>将企业产品手册、说明书、宣传画册等资料上传至网站，用户通过网站下载，可分用户权限实现下载控制，需与会员管理系统配合。</span></div>
+                        </div>
+                    </li>-->
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="title-bar" style="position:fixed;width:99.5%;height:60px;margin:0 auto;bottom:0px;min-width:1360px;">
+        <div style="height:58px;margin:1px;float:left;margin-left:15px;">            
+            <span style="position:absolute; margin-top:20px; margin-left:15px;color:white;font-size:18px;font-weight:bolder; ">FANUC</span>
+        </div>
+        <div style="height:58px;margin:1px;float:left;margin-left:105px;border-left:2px #ffffff solid;">
+            <span class="round" style="position:absolute;height:40px;line-height:40px;margin:0 auto; margin-top:10px; margin-left:15px;width:320px; color:white;font-size:18px;font-weight:bolder;background-color:green;text-align:center;">正常</span>
+        </div>
+        <div style="height:58px;margin:1px;float:left;margin-left:355px;border-left:2px #ffffff solid;">
+            <span style="position:absolute; margin-top:5px; margin-left:5px;color:white;font-size:8px;font-weight:bolder; ">计划产量</span>
+            <span style="position:absolute; margin-top:20px; margin-left:15px;color:white;font-size:18px;font-weight:bolder; ">500</span>
+        </div>
+        <div style="height:58px;margin:1px;float:left;margin-left:195px;border-left:2px #ffffff solid;">
+            <span style="position:absolute; margin-top:5px; margin-left:5px;color:white;font-size:8px;font-weight:bolder; ">实际产量</span>
+            <span style="position:absolute; margin-top:20px; margin-left:15px;color:white;font-size:18px;font-weight:bolder; ">50</span>
+        </div>
+        <div style="height:58px;margin:1px;float:left;margin-left:185px;border-left:2px #ffffff solid;">
+            <span style="position:absolute; margin-top:5px; margin-left:5px;color:white;font-size:8px;font-weight:bolder; ">JPH</span>
+            <span style="position:absolute; margin-top:20px; margin-left:15px;color:white;font-size:18px;font-weight:bolder; ">42</span>
+        </div>
+        <div style="height:58px;margin:1px;float:left;margin-left:195px;border-left:2px #ffffff solid;">
+            <span style="position:absolute; margin-top:5px; margin-left:5px;color:white;font-size:8px;font-weight:bolder; ">设备使用率</span>
+            <span style="position:absolute; margin-top:20px; margin-left:15px;color:white;font-size:18px;font-weight:bolder; ">82%</span>
+        </div>
+    </div>    
+</body>
+
+</html>

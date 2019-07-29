@@ -1,0 +1,159 @@
+#mediaquery-checker {
+	width: 20px;
+}
+.column {
+	width: 6.08%;
+}
+.one-column {
+	width: 6.08%;
+}
+.two-columns {
+	width: 14.41%;
+}
+.three-columns {
+	width: 22.75%;
+}
+.four-columns {
+	width: 31.08%;
+}
+.five-columns {
+	width: 39.41%;
+}
+.six-columns {
+	width: 47.75%;
+}
+.seven-columns {
+	width: 56.08%;
+}
+.eight-columns {
+	width: 64.41%;
+}
+.nine-columns {
+	width: 72.72%;
+}
+.ten-columns {
+	width: 81.08%;
+}
+.eleven-columns {
+	width: 89.41%;
+}
+.twelve-columns {
+	width: 97.75%;
+}
+.one-column-tablet {
+	width: 6.08%;
+}
+.two-columns-tablet {
+	width: 14.41%;
+}
+.three-columns-tablet {
+	width: 22.75%;
+}
+.four-columns-tablet {
+	width: 31.08%;
+}
+.five-columns-tablet {
+	width: 39.41%;
+}
+.six-columns-tablet {
+	width: 47.75%;
+}
+.seven-columns-tablet {
+	width: 56.08%;
+}
+.eight-columns-tablet {
+	width: 64.41%;
+}
+.nine-columns-tablet {
+	width: 72.72%;
+}
+.ten-columns-tablet {
+	width: 81.08%;
+}
+.eleven-columns-tablet {
+	width: 89.41%;
+}
+.twelve-columns-tablet {
+	width: 97.75%;
+}
+.one-column-mobile {
+	width: 6.08%;
+}
+.two-columns-mobile {
+	width: 14.41%;
+}
+.three-columns-mobile {
+	width: 22.75%;
+}
+.four-columns-mobile {
+	width: 31.08%;
+}
+.five-columns-mobile {
+	width: 39.41%;
+}
+.six-columns-mobile {
+	width: 47.75%;
+}
+.seven-columns-mobile {
+	width: 56.08%;
+}
+.eight-columns-mobile {
+	width: 64.41%;
+}
+.nine-columns-mobile {
+	width: 72.72%;
+}
+.ten-columns-mobile {
+	width: 81.08%;
+}
+.eleven-columns-mobile {
+	width: 89.41%;
+}
+.twelve-columns-mobile {
+	width: 97.75%;
+}
+.one-column-mobile-landscape {
+	width: 6.08%;
+}
+.two-columns-mobile-landscape {
+	width: 14.41%;
+}
+.three-columns-mobile-landscape {
+	width: 22.75%;
+}
+.four-columns-mobile-landscape {
+	width: 31.08%;
+}
+.five-columns-mobile-landscape {
+	width: 39.41%;
+}
+.six-columns-mobile-landscape {
+	width: 47.75%;
+}
+.seven-columns-mobile-landscape {
+	width: 56.08%;
+}
+.eight-columns-mobile-landscape {
+	width: 64.41%;
+}
+.nine-columns-mobile-landscape {
+	width: 72.72%;
+}
+.ten-columns-mobile-landscape {
+	width: 81.08%;
+}
+.eleven-columns-mobile-landscape {
+	width: 89.41%;
+}
+.twelve-columns-mobile-landscape {
+	width: 97.75%;
+}
+.new-row-mobile-portrait {
+	clear: none;
+}
+.new-row-mobile-landscape {
+	clear: left;
+}
+#shortcuts {
+	width: 400px;
+}
